@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lead Gen Results & How I Verify Genuine Enquiries — Google Ads</title>
+<meta name="description" content="Real local service lead generation results on Google Ads Search and Performance Max, and the method I use to confirm conversions are genuine phone and form enquiries, not just platform numbers." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f2540; --navy2:#1b3a5f; --ink:#1f2d3d; --mut:#5a6b7d; --soft:#7f8fa0;
+    --bg:#ffffff; --alt:#f3f6fa; --line:#e2e8f0; --line2:#d3dde8;
+    --accent:#0e7c66; --accent2:#12a684; --blue:#2f6fed; --gold:#c98a2b;
+    --radius:14px; --maxw:1000px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-weight:800;color:var(--navy);letter-spacing:-.3px;line-height:1.15}
+  a{color:var(--accent)}
+
+  header.nav{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:15px 22px;max-width:var(--maxw);margin:0 auto}
+  .brand{font-weight:800;color:var(--navy);font-size:16px}
+  .brand small{display:block;font-weight:600;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-top:2px}
+  .navlinks{display:flex;gap:20px;font-size:13.5px;font-weight:600;color:var(--mut)}
+  .navlinks a{text-decoration:none;color:var(--mut)}.navlinks a:hover{color:var(--navy)}
+  @media(max-width:780px){.navlinks{display:none}}
+
+  .hero{padding:54px 0 30px}
+  .kick{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);background:#e7f4f0;border:1px solid #c7e6dd;padding:6px 12px;border-radius:999px}
+  h1{font-size:clamp(28px,4.4vw,44px);margin:18px 0 0;max-width:19ch}
+  h1 .g{color:var(--accent)}
+  .lede{color:var(--mut);font-size:clamp(15px,2vw,17.5px);max-width:62ch;margin:16px 0 0;font-weight:500}
+
+  section{padding:38px 0;border-top:1px solid var(--line)}
+  .eyebrow{color:var(--accent);font-weight:800;font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase}
+  h2{font-size:clamp(21px,3vw,29px);margin:9px 0 8px}
+  .sub{color:var(--mut);max-width:66ch;font-size:15px;font-weight:500}
+
+  .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+  @media(max-width:820px){.cases{grid-template-columns:1fr}}
+  .case{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 1px 2px rgba(15,37,64,.04)}
+  .case .lbl{font-size:11.5px;font-weight:700;color:var(--accent);letter-spacing:.4px;text-transform:uppercase}
+  .case h3{font-size:15px;margin:6px 0 12px;font-family:'Inter'}
+  .metric{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-top:1px dashed var(--line2)}
+  .metric:first-of-type{border-top:none}
+  .metric .v{font-weight:800;color:var(--navy);font-size:18px}
+  .metric .k{color:var(--mut);font-size:12.5px;font-weight:500;max-width:58%;text-align:right}
+
+  .verify{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.verify{grid-template-columns:1fr}}
+  .vc{background:var(--alt);border:1px solid var(--line);border-radius:12px;padding:17px}
+  .vc .n{width:24px;height:24px;border-radius:7px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px;margin-bottom:8px}
+  .vc b{color:var(--navy);font-size:14.5px;font-family:'Inter'}
+  .vc p{color:var(--mut);font-size:13px;font-weight:500;margin-top:4px}
+
+  .calllog{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .calllog .ch{padding:13px 18px;background:var(--navy);color:#fff;font-weight:700;font-size:13.5px;letter-spacing:.3px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{background:var(--alt);text-align:left;padding:10px 14px;font-size:11px;letter-spacing:.4px;text-transform:uppercase;color:var(--mut);font-weight:700;border-bottom:1px solid var(--line)}
+  tbody td{padding:10px 14px;border-bottom:1px solid var(--line);color:var(--mut);font-weight:500}
+  tbody tr:last-child td{border-bottom:none}
+  tbody td b{color:var(--ink)}
+  .pill{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:5px}
+  .pill.ok{background:#e4f4ef;color:var(--accent)}
+  .pill.no{background:#fdecea;color:#c0392b}
+
+  .approach{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:22px}
+  @media(max-width:760px){.approach{grid-template-columns:1fr}}
+  .ap{display:flex;gap:11px;align-items:flex-start;padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:11px}
+  .ap .t{flex:0 0 auto;width:22px;height:22px;border-radius:6px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:800}
+  .ap b{color:var(--navy);font-size:14px;font-family:'Inter'}.ap p{color:var(--mut);font-size:12.8px;font-weight:500}
+
+  .note{margin-top:20px;background:var(--alt);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:15px 18px}
+  .note p{color:var(--mut);font-size:13.5px;font-weight:500}.note b{color:var(--navy)}
+  footer{padding:26px 0 46px;color:var(--soft);font-size:12.5px;text-align:center;border-top:1px solid var(--line);font-weight:500}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <div class="brand">Google Ads · Lead Gen<small>Results &amp; conversion verification</small></div>
+    <nav class="navlinks">
+      <a href="#results">Results</a>
+      <a href="#verify">How I verify</a>
+      <a href="#log">Call log</a>
+      <a href="#approach">For this account</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero" style="border-top:none">
+    <span class="kick">Lead gen · Search + Performance Max · local service</span>
+    <h1>Real enquiries, <span class="g">verified</span>. Not just platform numbers.</h1>
+    <p class="lede">A look at local service lead generation I have run on Google Ads, and the method I use to confirm each conversion is a genuine phone or form enquiry. Client names are withheld for confidentiality, and full detail is available on a call.</p>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results">
+    <span class="eyebrow">Selected results</span>
+    <h2>Local service accounts, focused on cost per genuine lead</h2>
+    <p class="sub">All figures are from single-month account performance on lead-gen accounts of a similar size and model to a home services business. Currency shown as originally reported.</p>
+    <div class="cases">
+      <div class="case">
+        <div class="lbl">Home services · installation (UK)</div>
+        <h3>Efficient lead volume at a low cost per lead</h3>
+        <div class="metric"><span class="v">91</span><span class="k">tracked conversions in the month</span></div>
+        <div class="metric"><span class="v">29</span><span class="k">phone calls from the ads</span></div>
+        <div class="metric"><span class="v">£11.69</span><span class="k">blended cost per lead</span></div>
+        <div class="metric"><span class="v">£9.50</span><span class="k">Search campaign cost per lead</span></div>
+      </div>
+      <div class="case">
+        <div class="lbl">Local clinic · service (UK)</div>
+        <h3>High call volume from high-intent Search</h3>
+        <div class="metric"><span class="v">60</span><span class="k">tracked conversions in the month</span></div>
+        <div class="metric"><span class="v">98</span><span class="k">phone calls from the ads</span></div>
+        <div class="metric"><span class="v">~£35</span><span class="k">cost per lead</span></div>
+        <div class="metric"><span class="v">+264%</span><span class="k">reach vs prior period</span></div>
+      </div>
+      <div class="case">
+        <div class="lbl">Local service · Search + PMax (US)</div>
+        <h3>Strong return, verified by call quality</h3>
+        <div class="metric"><span class="v">9.2x</span><span class="k">return on ad spend</span></div>
+        <div class="metric"><span class="v">22</span><span class="k">phone calls, several minutes long</span></div>
+        <div class="metric"><span class="v">6.99%</span><span class="k">click-through rate</span></div>
+        <div class="metric"><span class="v">Brand</span><span class="k">protected with a dedicated campaign</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFY -->
+  <section id="verify">
+    <span class="eyebrow">The part that matters here</span>
+    <h2>How I confirm a conversion is a real enquiry</h2>
+    <p class="sub">Platform conversion counts are a starting point, not the truth. Here is how I make sure the number in Google Ads reflects genuine calls and form enquiries, so the reporting you send your client is honest.</p>
+    <div class="verify">
+      <div class="vc"><div class="n">1</div><b>Track every ad-driven call</b><p>Google call reporting and call extensions, plus dynamic number insertion on the site where possible, so calls from ads are captured with time, duration and status.</p></div>
+      <div class="vc"><div class="n">2</div><b>Filter by call quality</b><p>Only answered calls of a meaningful length count as a genuine enquiry. Missed calls, wrong numbers and short misdials are excluded, not celebrated.</p></div>
+      <div class="vc"><div class="n">3</div><b>Validate form leads</b><p>Form submissions are set up as key events through Google Tag Manager and checked for spam or bot entries before they count.</p></div>
+      <div class="vc"><div class="n">4</div><b>Reconcile three sources</b><p>Google Ads, GA4 and the call log are cross-checked so the conversion number ties back to real logged enquiries, not an inflated platform figure.</p></div>
+    </div>
+  </section>
+
+  <!-- CALL LOG -->
+  <section id="log">
+    <span class="eyebrow">What genuine looks like</span>
+    <h2>An example call log, the way I read it</h2>
+    <p class="sub">A simplified view of how calls are judged. Length and status decide what counts, so cost per genuine lead is honest.</p>
+    <div class="calllog">
+      <div class="ch">Ad-driven calls, judged by quality</div>
+      <table>
+        <thead><tr><th>Time</th><th>Duration</th><th>Status</th><th>Counts as lead</th></tr></thead>
+        <tbody>
+          <tr><td>08:12</td><td><b>7 min 38 s</b></td><td>Answered</td><td><span class="pill ok">Genuine</span></td></tr>
+          <tr><td>11:04</td><td><b>3 min 05 s</b></td><td>Answered</td><td><span class="pill ok">Genuine</span></td></tr>
+          <tr><td>13:47</td><td><b>0 s</b></td><td>Missed</td><td><span class="pill no">Excluded</span></td></tr>
+          <tr><td>16:20</td><td><b>11 s</b></td><td>Answered</td><td><span class="pill no">Excluded</span></td></tr>
+          <tr><td>18:03</td><td><b>4 min 51 s</b></td><td>Answered</td><td><span class="pill ok">Genuine</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><p><b>The point:</b> the client is billed for outcomes, so the report should show genuine enquiries and cost per genuine enquiry, not a conversion count padded with misdials. That is the standard I would hold this account to.</p></div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <span class="eyebrow">For the Sydney account</span>
+    <h2>How I would run the refresh, then the monthly</h2>
+    <div class="approach">
+      <div class="ap"><div class="t">1</div><div><b>Rebuild and verify tracking first</b><p>Nothing is trusted until conversion tracking for calls and forms is rebuilt, tested with live actions and reconciled across Google Ads and GA4.</p></div></div>
+      <div class="ap"><div class="t">2</div><div><b>Clean PMax and protect brand</b><p>Tidy asset groups and exclusions, and keep Performance Max from absorbing brand traffic that the brand Search campaign should own.</p></div></div>
+      <div class="ap"><div class="t">3</div><div><b>Tighten Search with negatives</b><p>Fortnightly search term reviews and a growing negative list, so a modest budget stays on genuine home design intent.</p></div></div>
+      <div class="ap"><div class="t">4</div><div><b>Pace budget and report clearly</b><p>Steady budget pacing, a monthly report focused on genuine enquiries and cost per lead, and one call to talk it through.</p></div></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  Google Ads Search &amp; Performance Max · Lead generation · Call &amp; form conversion tracking · GA4 &amp; GTM · Genuine-enquiry verification
+</footer>
+
+</body>
+</html>
